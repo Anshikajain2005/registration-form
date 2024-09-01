@@ -1,0 +1,156 @@
+<html>
+
+<body>
+
+  <head>
+    <style>
+      body {
+       
+      }
+
+      .csss {
+        background-image: url(imagepage/background3.png);
+        padding: 0px;
+        border: 4px inset rgb(217, 232, 238);
+         box-shadow: 50px  skyblue;
+        margin-left: 400px;
+        margin-right: 350px;
+      }
+
+      .button {
+        background-image: url(imagepage/background3.png);
+        padding: 8px 22px;
+        border-radius: 10px;
+        margin-top : 10px;
+        font-size: 20px;
+        transition: all 8.5 ease;
+        margin-left:250px;
+    
+        gap:unset;
+        text-decoration: none;
+      }
+     #reset{
+      margin-left:0%
+     }
+     #submit{
+      text-decoration: none;
+     }
+
+      h1 {
+        text-decoration: underline;
+        border: rgb(110, 209, 248);
+        width: 500px;
+        margin-left: 450px;
+        text-align: center;
+      }
+      a{
+        text-decoration: none;
+        color: black;
+      }
+    </style>
+  </head>
+
+  <h1>Registration Form</h1>
+  <form>
+    <div class="csss">
+    <table border="1"  cellspacing="6" cellpadding="9" width="750" >
+
+      <tbody>
+        <tr>
+          <td> <label for="textname">Name</label></td>
+          <td><input type="text" name="txl" id="text" width="200"></td>
+        </tr>
+        <tr>
+          <td><label for="Father's Name">Father's name</label> </td>
+          <td><input type="text" id="name"></td>
+        </tr>
+        <tr>
+          <td><label for="dob">Date Of Birth</label></td>
+          <td><input type="date" id="date" value="date"></td>
+        </tr>
+        <tr>
+          <td><label for="age">Age</label></td>
+          <td><input type="number" id="age" min="15" max="35"></td>
+        </tr>
+        <tr>
+          <td><label for="gender">Gender</label></td>
+          <td><input type="radio" name="gen" value="male" id="m">Male
+            <input type="radio" name="gen" value="female" id="f">Female
+            <input type="radio" name="gen" value="other" id="o">Other
+          </td>
+        </tr>
+        <tr>
+          <td><label for="category">category</label></td>
+          <td><input list="list" id="listnm" name="listnm">
+            <datalist id="list">
+              <option value="General">
+              <option value="OBC">
+              <option value="SC">
+              <option value="ST">
+            </datalist>
+
+          </td>
+        </tr>
+        <tr>
+          <td><label for="High">Highest Qualification</label></td>
+          <td>
+            <select>
+              <option>10th</option>
+              <option>12th</option>
+              <option>Graduation</option>
+              <option>Post Graduation</option>
+              <option>P.H.D</option>
+              <option>Post Doc</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="language">language</label></td>
+          <td><input type="checkbox" name="check" id="list" value="checkbox">
+            <label for="Hindi">Hindi</label>
+            <input type="checkbox" name="check" id="list" value="checkbox">
+            <label for="English">English</label>
+            <input type="checkbox" name="check" id="list" value="checkbox">
+            <label for="urdu">Malayalam</label>
+            <input type="checkbox" name="check" id="list" value="checkbox">
+            <label for="Marathi">Marathi</label>
+            <input type="checkbox" name="check" id="list" value="checkbox">
+            <label for="gujrati">Gujrati</label>
+            <input type="checkbox" name="check" id="list" value="checkbox">
+            <label for="Urdu">Urdu</label>
+            <input type="checkbox" name="check" id="list" value="checkbox">
+            <label for="Bhojpuri">Bhojpuri</label>
+            <input type="checkbox" name="check" id="list" value="checkbox">
+            <label for="Telgu">Telgu</label>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="email">Email</td>
+          <td><input type="email" id="email"></td>
+        </tr>
+        <td><label for="password">Password</label></td>
+        <td><input type="password" id="password"></td>
+        <tr>
+          <td><label for="contact">contact</label></td>
+          <td><input type="tel" id="phone" maxlength="10"></td>
+        </tr>
+        <tr>
+          <td><label for="address">Address</label></td>
+          <td><textarea name="textarea" id="add" row="3" cols="50"></textarea></td>
+        </tr>
+        <tr>
+          <td><label for="file">Upload File</label></td>
+          <td><input type="file" id="file"></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <a href="https://maitreesamooh.com/jainism-resource/"><button class="button" type="button"
+        id="submit"><b>Submit</b></a></button>
+    <button class="button" type="reset" id="reset"><b>Reset</b></button>
+   </div>
+
+  </form>
+</body>
+
+</html>
